@@ -1,0 +1,234 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body{
+  color: #000;
+  min-width: 375px;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+a:hover{
+  color: #FA3D4B;
+}
+.box{
+  background-color: #FA3D4B;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 12px;
+  display: inline;
+  padding: 2px;
+}
+.box2{
+  color: #FA3D4B;
+  border: 1px solid;
+  border-radius: 10px;
+  display: flex;
+  text-overflow: ellipsis;
+  display: inline;
+  padding: 5px;
+  font-size: 12px;
+  width: 28px;
+  height: 65px;
+}
+
+
+/*FOOTER*/
+footer{
+  text-align: center;
+  font-size: 14px;
+  color: #7E7E7E;
+}
+footer hr{
+  background-color: #F0F1F2;
+}
+footer .logo{
+  height: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+footer li{
+  margin: 5px;
+}
+footer img{
+  margin: 20px;
+}
+footer .copyright{
+  margin: 20px;
+}
+footer a{
+  color: #7E7E7E;
+  font-size: 14px;
+}
+
+
+/*FORUM MAIN HEADER*/
+header .logo{
+  color: #FA3D4B;
+  font-size: 40px;
+  height: 28px;
+  margin: calc((76px - 28px) / 2);
+}
+.nav__menu{
+  min-width: 375px;
+  position: relative;
+  display: flex;
+  padding-inline-start: 1rem;
+  height: 43px;
+  font-size: 16px;
+  align-items: center;
+  font-weight: 500;
+  font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+.nave__menu .clicked{
+  color: #FA3D4B;
+}
+.nav__menu li{
+  margin-right: 10%;
+}
+.btn.btn__question{
+  position: absolute;
+  top: calc(76px + (43px / 2));
+  font-size: 10px;
+  right: 0;
+  box-sizing: border-box;
+  padding: 4px;
+  color: #fff;
+  margin-inline-end: 1rem;
+}
+
+.material-icons{
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+
+/*FORUM MAIN MAIN*/
+section{
+  margin-inline-start: 1rem;
+}
+section div{
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+section div img{
+  margin-bottom: 20px;
+}
+.search{
+  margin-inline-start: 1rem;
+  position: relative;
+}
+.search input{
+  font-size: 14px;
+  flex-grow: 1;
+  height: 40px;
+  min-width: 327px;
+}
+.content{
+  width: 327px;
+  margin-bottom: 29px; 
+}
+.writer{
+  font-size: 14px;
+}
+.date{
+  font-size: 10px;
+}
+h4{
+  font-size: 19px;
+}
+.content2{
+  width: 327px;
+  margin-bottom: 20px;
+}
+p{
+  line-height: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section hr{
+  background-color: #F0F1F2;
+}
+.btn.btn__tag{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.btn.btn__chocoball{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  right: 0;
+  box-sizing: border-box;
+  padding: 4px;
+}
+
+
+
+/*FORUM QUESTION MAIN*/
+.createQuestion{
+  font-size: 14px;
+}
+.createQuestion h4{
+  font-size: 19px;
+}
+.createQuestion p{
+  color: #7E7E7E;
+}
+.createQuestion div{
+  min-width: 327px;
+  overflow: hidden;
+  height: auto;
+  min-height: 46px;
+}
+.createQuestion .div__img{
+  border: 1px solid black;
+}
+.createQuestion input{
+  min-width: 327px;
+  overflow: hidden;
+  height: auto;
+  min-height: 46px;
+}
+.createQuestion textarea{
+  min-width: 327px;
+  overflow: hidden;
+  height: auto;
+  min-height: 46px;
+}
+.createQuestion textarea::placeholder{
+  color: #7E7E7E;
+  
+}
+.createQuestion .ta__situation{
+  min-height: 160px;
+}
+.createQuestion .ta__eCode{
+  min-height: 100px;
+}
+.createQuestion .btn{
+  display: flex;
+
+}
+.btn--submit{
+  background-color: #FA3D4B;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
