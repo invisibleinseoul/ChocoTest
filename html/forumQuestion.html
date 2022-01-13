@@ -41,31 +41,45 @@
 
   <!--MAIN-->
   <section>
-    <div class="createQuestion">
-      <h4>질문 제목</h4>
-      <p>문제 상황을 면확하게 적을수록 정확한 답변을 받을 수 있어요.</p>
-      <textarea placeholder="질문 제목을 입력하세요"></textarea>
-      <h4>문제 상황과 궁금한 점</h4>
-      <p>어떤 문제가 발생했는지 구체적으로 알려주세요.</p>
-      <textarea class="ta__situation" placeholder="1. 문제 상황을 요약해주세요 &#10;2. 어떤 것을 시도했는지 알려주세요 &#10;3. 어떤 부분이 궁금한지 알려주세요"></textarea>
-      <h4>오류 코드</h4>
-      <textarea class="ta__eCode"></textarea>
-      <h4>태그</h4>
-      <p>질문에 해당하는 최대 5개의 태그를 추가하세요.</p>
-      <textarea placeholder="태그를 입력하세요"></textarea>
-      <h4>사진을 첨부하세요</h4>
-      <div class="div__img"></div>
-      <div class="btn btn__img">첨부하기</div>
-      <h4>채택된 답변자에게 초코볼을 전달합니다</h4>
-      <div>
-        <input type="number" placeholder="원하는 만큼 초코볼을 입력하세요">
-      </div>
-      <div class="btn btn__plus50choco">50 초코볼</div>
-      <div class="btn btn__plus100choco">100 초코볼</div>
-      <div>
-        <input type="submit" value="질문 작성하기" class="btn btn--submit">
-      </div>
-    </div>
+    <form class="createQuestion">
+      <ul>
+        <li>
+          <h4>질문 제목</h4>
+          <div class="furtherEx">문제 상황을 면확하게 적을수록 정확한 답변을 받을 수 있어요.</div>
+          <input class="txtArea" type="text" placeholder="질문 제목을 입력하세요"></input>
+        </li>
+        <li>
+          <h4>문제 상황과 궁금한 점</h4>
+          <div class="furtherEx">어떤 문제가 발생했는지 구체적으로 알려주세요.</div>
+          <textarea class="ta__situation" placeholder="1. 문제 상황을 요약해주세요 &#10;2. 어떤 것을 시도했는지 알려주세요 &#10;3. 어떤 부분이 궁금한지 알려주세요"></textarea>
+        </li>
+        <li>
+          <h4>오류 코드</h4>
+          <textarea class="ta__eCode"></textarea>
+        </li>  
+        <li>
+          <h4>태그</h4>
+          <div class="furtherEx">질문에 해당하는 최대 5개의 태그를 추가하세요.</div>
+          <textarea placeholder="태그를 입력하세요"></textarea>
+        </li>
+        <li>
+          <h4>사진을 첨부하세요</h4>
+          <div class="div__img"></div>
+          <div class="btn btn__img">첨부하기</div>
+        </li>
+        <li>
+          <h4>채택된 답변자에게 초코볼을 전달합니다</h4>
+          <div>
+            <input class="txtArea" type="number" min="0" placeholder="원하는 만큼 초코볼을 입력하세요">
+          </div>
+          <div class="btn btn__plus50choco">50 초코볼</div>
+          <div class="btn btn__plus100choco">100 초코볼</div>    
+        </li>
+        <div class="submitBtn">
+         <input type="submit" value="질문 작성하기" class="btn btn--submit">
+        </div>
+      </ul>
+    </form>
   </section>
 
   <!--FOOTER-->

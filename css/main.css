@@ -174,33 +174,38 @@ section hr{
 /*FORUM QUESTION MAIN*/
 .createQuestion{
   font-size: 14px;
+  min-width: 327px;
 }
 .createQuestion h4{
   font-size: 19px;
 }
-.createQuestion p{
+.createQuestion .furtherEx{
   color: #7E7E7E;
+  margin-top: 5px;
 }
-.createQuestion div{
-  min-width: 327px;
-  overflow: hidden;
-  height: auto;
-  min-height: 46px;
+.createQuestion ul li{
+  margin-bottom: 30px;
 }
 .createQuestion .div__img{
   border: 1px solid black;
+  width: 237px;
+  height: 46px;
+  display: inline-flex;
+  margin-top: 5px;
 }
-.createQuestion input{
+.createQuestion .txtArea{
   min-width: 327px;
   overflow: hidden;
   height: auto;
   min-height: 46px;
+  margin-top: 5px;
 }
 .createQuestion textarea{
   min-width: 327px;
   overflow: hidden;
   height: auto;
-  min-height: 46px;
+  height: 46px;
+  margin-top: 5px;
 }
 .createQuestion textarea::placeholder{
   color: #7E7E7E;
@@ -213,22 +218,33 @@ section hr{
   min-height: 100px;
 }
 .createQuestion .btn{
-  display: flex;
-
+  display: inline-flex;
+  background-color: #F0F1F2;
+  height: 28px;
+  width: 69px;
+  border-radius: 5px;
+  justify-content: center;
+  line-height: 28px;
+  margin-top: 10px;
 }
-.btn--submit{
+.createQuestion .btn.btn__img{
+  background: #CCC;
+  width: 82px;
+  height: 46px;
+  color: #fff;
+  line-height: 46px;
+  margin-top: 0;
+}
+.createQuestion .btn--submit{
   background-color: #FA3D4B;
   color: #fff;
-  text-align: center;
+  height: 38px;
+  width: 118px;
+  border: 0;
+  justify-content: center;
+  margin-top: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
+.submitBtn{
+  height: 38px;
+  width: 118px;
+}
