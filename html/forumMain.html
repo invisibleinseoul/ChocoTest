@@ -11,7 +11,8 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
   <link rel="stylesheet" href="../css/main.css">
   <script defer src="../Javascript/main.js"></script>
   <title>Choco Forum</title>
@@ -19,7 +20,9 @@
 <body>
   <!--HEADER-->
   <header>
-    <img src="../images/logo_choco.png" alt="Choco" class="logo">
+    <a href="../index.html">
+      <img src="../images/logo_choco.png" alt="Choco" class="logo">
+    </a>
   </header>
   <section class="nav">
     <ul class="nav__menu">
@@ -29,7 +32,7 @@
         <a href="./html/forumMain.html">포럼</a>
       </li>
       <li>
-        <a href="javascript:void(0)">로그인</a>
+        <a href="./mypage.html">로그인</a>
       </li>
     </ul>
     <a href="../html/forumQuestion.html" class="btn box btn__question">
@@ -40,10 +43,10 @@
   
 
   <!--MAIN-->
-  <section>
+  <section class="forum-wrapper">
     <div class="search">
       <input type="text" placeholder="검색어를 입력하세요">
-      <div class="material-icons">search</div>
+      <div class="material-icons" id="search-icon">search</div>
     </div>
     <div class="content">
       <p class="writer">작성자 <span class="date">2022.02.02</span></p>
