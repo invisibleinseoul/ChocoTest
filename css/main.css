@@ -38,7 +38,6 @@ footer{
   color: #7E7E7E;
   min-width: 375px;
 }
-footer hr{background-color: #F0F1F2;}
 footer .logo{
   height: 20px;
   margin-bottom: 30px;
@@ -159,9 +158,6 @@ header .logo{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.forum-wrapper hr{
-  background-color: #F0F1F2;
-}
 .btn.btn__tag{
   padding-left: 10px;
   padding-right: 10px;
@@ -268,6 +264,7 @@ header .logo{
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 .mypage-content{
   margin-left: auto;
@@ -278,7 +275,10 @@ table{
   width: 327px;
   background-color: #F0F1F2;
 }
-.user-name{font-size: 19px;}
+.user-name{
+  font-size: 19px;
+  font-weight: 700;
+}
 .user-wrapper{
   align-items: flex-end;
   display: flex;
@@ -289,7 +289,8 @@ table{
 .exchange-comment{
   font-size: 12px;
   color: #7E7E7E;
-  margin-right: 0;
+  right: 0;
+  position: absolute;
 }
 .btn.btn--exchange{
   font-size: 14px;
@@ -297,6 +298,7 @@ table{
   text-align: center;
   color: #fff;
   font-family: 'Pretendard', Arial, sans-serif;
+  cursor: pointer;
 }
 .user .btn{
   height: 28px;
@@ -307,7 +309,8 @@ table{
 .content-title{
   font-size: 19px;
   color: #FA3D4B;
-  font-weight: 600;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 .content-content{
   font-size: 14px;
@@ -318,15 +321,24 @@ table{
   line-height: 28px;
   text-align: center;
   color: #fff;
-  font-family: 'Pretendard', Arial, sans-serif;
+  height: 28px;
+  width: 124px;
+  background-color: #FA3D4B;
+  border-radius: 7px;
+  margin-inline-start: 203px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 .user-grade{
+  margin-top: 10px;
   font-size: 19px;
   height: 60px;
+  margin-bottom: 10px;
 }
 .user-grade td{
   border-right:1px solid #000;
   vertical-align: middle;
+  font-weight: 700;
 }
 .user-grade td:last-child{border-right:none;}
 .price td:nth-child(2){background-color: white;}
@@ -339,6 +351,7 @@ table{
 .user-grade span,
 .price span{
   font-size: 14px;
+  font-weight: 500;
 }
 .price{
   font-size: 19px;
@@ -350,10 +363,16 @@ table{
 .myAnswer,
 .buy{
   align-items: flex-start;
-  display: flex;
   min-height: 146px;
   width: 327px;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
+}
+.myQuestion .content-content h4,
+.myAnswer .content-content h4{
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
