@@ -28,10 +28,10 @@
       <li>
         <a href="../index.html">홈</a></li>
       <li>
-        <a href="./html/forumMain.html">포럼</a>
+        <a href="../html/forumMain.html">포럼</a>
       </li>
       <li>
-        <a href="./mypage.html">로그인</a>
+        <a href="../html/mypage.html">로그인</a>
       </li>
       <li>
         <div class="btn_createQ">
@@ -66,22 +66,23 @@
           <input class="txtArea" placeholder="태그를 입력하세요"></input>
           <ul id="tag-list"></ul>
         </li>
-        <li>
+        <li class="uploadImg">
           <h4>사진을 첨부하세요</h4>
           <div class="div__img"></div>
-          <input type="file" class="btn btn__img" value="첨부하기"></input>
+          <div class="btnUpload-button">
+            <label for="btnUpload">첨부하기</label>
+            <input type="file" id="btnUpload" name="btnUpload" accept="image/*" onchange="loadFile(this)" value="첨부하기"></input>
+          </div>
         </li>
         <li>
           <h4>채택된 답변자에게 초코볼을 전달합니다</h4>
           <div>
-            <input class="txtArea" type="number" min="0" placeholder="원하는 만큼 초코볼을 입력하세요">
+            <input class="txtArea ta__choco" type="number" min="0" placeholder="원하는 만큼 초코볼을 입력하세요">
           </div>
           <div class="btn btn__plus50choco">50 초코볼</div>
           <div class="btn btn__plus100choco">100 초코볼</div>    
         </li>
-        <div class="submitBtn">
-         <input type="submit" value="질문 작성하기" class="btn btn--submit">
-        </div>
+        <input type="submit" value="질문 작성하기" class="btn btn--submit">
       </ul>
     </form>
   </section>
