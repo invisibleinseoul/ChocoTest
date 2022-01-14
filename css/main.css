@@ -11,9 +11,7 @@ a{
   text-decoration: none;
   color: #000;
 }
-a:hover{
-  color: #FA3D4B;
-}
+a:hover{color: #FA3D4B;}
 .box{
   background-color: #FA3D4B;
   color: #fff;
@@ -40,23 +38,15 @@ footer{
   color: #7E7E7E;
   min-width: 375px;
 }
-footer hr{
-  background-color: #F0F1F2;
-}
+footer hr{background-color: #F0F1F2;}
 footer .logo{
   height: 20px;
   margin-bottom: 30px;
   margin-top: 20px;
 }
-footer li{
-  margin: 5px;
-}
-footer img{
-  margin: 20px;
-}
-footer .copyright{
-  margin: 20px;
-}
+footer li{margin: 5px;}
+footer img{margin: 20px;}
+footer .copyright{margin: 20px;}
 footer a{
   color: #7E7E7E;
   font-size: 14px;
@@ -88,9 +78,7 @@ header .logo{
   margin-left: auto;
   margin-inline-start: 1.5rem;
 }
-.nave__menu .clicked{
-  color: #FA3D4B;
-}
+.nave__menu.clicked{color: #FA3D4B;}
 .nav__menu li{
   margin-right: 10%;
   min-height: 19px;
@@ -109,17 +97,13 @@ header .logo{
 
 
 /*FORUM MAIN MAIN*/
-.forum-wrapper{
-  margin-inline-start: 1rem;
-}
+.forum-wrapper{margin-inline-start: 1rem;}
 .forum-wrapper div{
   margin-left: auto;
   margin-right: auto;
   position: relative;
 }
-.forum-wrapper div img{
-  margin-bottom: 20px;
-}
+.forum-wrapper div img{margin-bottom: 20px;}
 .search{
   margin-inline-start: 1rem;
   align-self: flex-start;
@@ -206,9 +190,7 @@ header .logo{
   margin-right: auto;
   margin-inline-start: 1rem;
 }
-.createQuestion h4{
-  font-size: 19px;
-}
+.createQuestion h4{font-size: 19px;}
 .createQuestion .furtherEx{
   color: #7E7E7E;
   margin-top: 5px;
@@ -241,16 +223,10 @@ header .logo{
   height: 46px;
   margin-top: 5px;
 }
-.createQuestion textarea::placeholder{
-  color: #7E7E7E;
-  
-}
-.createQuestion .ta__situation{
-  min-height: 160px;
-}
-.createQuestion .ta__eCode{
-  min-height: 100px;
-}
+.createQuestion textarea::placeholder{color: #7E7E7E;}
+.createQuestion .ta__situation{min-height: 160px;}
+.createQuestion .ta__eCode{min-height: 100px;}
+
 .createQuestion .btn{
   display: inline-flex;
   background-color: #F0F1F2;
@@ -284,23 +260,36 @@ header .logo{
 
 
 /*MY PAGE*/
+.user{
+  align-items: flex-end;
+  display: flex;
+  min-height: 146px;
+  width: 327px;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mypage-content{
+  margin-left: auto;
+  margin-right: auto;
+}
 table{
   text-align: center;
   width: 327px;
   background-color: #F0F1F2;
-  border-collapse: collapse;
 }
-table td {border-right:1px solid #000;}
-table td:last-child{border-right:none;}
-.user-name{
-  font-size: 19px;
+.user-name{font-size: 19px;}
+.user-wrapper{
+  align-items: flex-end;
+  display: flex;
+  height: 24px;
+  min-width: 327px;
 }
-.user-name span{
-  font-size: 14px;
-}
-.refund-comment{
+.user-name span{font-size: 14px;}
+.exchange-comment{
   font-size: 12px;
   color: #7E7E7E;
+  margin-right: 0;
 }
 .btn.btn--exchange{
   font-size: 14px;
@@ -336,16 +325,35 @@ table td:last-child{border-right:none;}
   height: 60px;
 }
 .user-grade td{
-  
+  border-right:1px solid #000;
+  vertical-align: middle;
 }
-.user-grade span{
+.user-grade td:last-child{border-right:none;}
+.price td:nth-child(2){background-color: white;}
+.price td{vertical-align: middle;}
+
+.price tr{
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+.user-grade span,
+.price span{
   font-size: 14px;
 }
 .price{
   font-size: 19px;
   text-align: center;
   height: 245px;
+  font-weight: 700;
 }
-.price span{
-  font-size: 14px;
+.myQuestion,
+.myAnswer,
+.buy{
+  align-items: flex-start;
+  display: flex;
+  min-height: 146px;
+  width: 327px;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
