@@ -461,3 +461,28 @@ table{
   right: 0;
   display: inline;
 }
+.QA-wrapper{
+  align-items: center;
+  display: flex;
+  width: 327x;
+}
+#arrowRight{
+}
+.question__answers .writer{
+  width: 327px;
+}
+.writer p {
+  width: 299px;
+}
+.btn.btnSelect{
+  align-items: center;
+  background-color: #7E7E7E;
+  width: 59px;
+  color: #FFF;
+  display: flex;
+  margin-right: 0;
+  height: 24px;
+  padding: 0 5.5px;
+  position: absolute;
+  left: calc(327px - 98px);
+}
