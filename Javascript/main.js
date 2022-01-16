@@ -16,7 +16,7 @@ $("textarea.ta__eCode").on('keydown keyup', function(){
 //Display Date
 const el = document.getElementById("date");
 
-function clock(){
+function date2Digits(){
   const time = new Date();
   const year = time.getFullYear();
   const month = time.getMonth() + 1;
@@ -25,4 +25,5 @@ function clock(){
   el.innerText =
   `${year}.${("00" + month.toString()).slice(-2)}.${("00" + date.toString()).slice(-2)}`  //Display in double digits
 }
-clock();
+date2Digits();
+
