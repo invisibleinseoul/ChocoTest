@@ -282,6 +282,7 @@ header .logo{
   width: 118px;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 /*MY PAGE*/
@@ -466,10 +467,20 @@ table{
   display: flex;
   width: 327x;
 }
-#arrowRight{
+.forum-wrapper hr{
+  height: 1px;
+  width: 375px;
+  border: none;
+  background-color: #7E7E7E;
 }
-.question__answers .writer{
+#arrowRight{
+  color: #7E7E7E;
+}
+.forum-wrapper .question__answers .writer{
   width: 327px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .writer p {
   width: 299px;
@@ -485,4 +496,18 @@ table{
   padding: 0 5.5px;
   position: absolute;
   left: calc(327px - 98px);
+}
+.QA__write{
+  height: 290px;
+  width: 327px;
+  border: 1px solid black;
+}
+.QA__write .btn--submit{
+  background-color: #FA3D4B;
+  color: #fff;
+  height: 38px;
+  width: 118px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
