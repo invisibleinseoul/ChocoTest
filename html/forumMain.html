@@ -25,13 +25,13 @@
     </a>
   </header>
   <section class="nav">
-    <ul class="nav__menu">
-      <li>
+    <ul class="nav__menu" id="nav__menu" onclick="changeColor()">
+      <li id="nav__menu__li" onclick="changeColor()">
         <a href="../index.html">홈</a></li>
-      <li>
+      <li id="nav__menu__li" onclick="changeColor()">
         <a href="../html/forumMain.html">포럼</a>
       </li>
-      <li>
+      <li id="nav__menu__li" onclick="changeColor()">
         <a href="../html/mypage.html">로그인</a>
       </li>
       <li>
@@ -52,7 +52,7 @@
     </div>
     <div class="forum-content">
       <div class="forum-content-wrapper">
-        <div class="writer">작성자 <span class="date">2022.02.02</span></div>
+        <div class="writer">작성자 <span id="date"></span></div>
         <h4>질문 제목입니다.</h4>
         <p>맥에서 3.8.7버전 설치하고 터미널에서 확인했는데 버전이 다르게 뜨네요...혹시 재설치 해야하는걸까요?</p>
         <img src="../images/img_preview.png" alt="img_preview">
@@ -65,7 +65,7 @@
     <div>
       <div class="forum-content">
         <div>
-          <p class="writer">작성자 <span class="date">2022.02.02</span></p>
+          <p class="writer">작성자 <span id="date"></span></p>
           <h4>질문 제목입니다.</h4>
           <p>맥에서 3.8.7버전 설치하고 터미널에서 확인했는데 버전이 다르게 뜨네요...혹시 재설치 해야하는걸까요?</p>
           <div class="btns">
