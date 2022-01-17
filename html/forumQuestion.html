@@ -28,7 +28,7 @@
       <li>
         <a href="../index.html">홈</a></li>
       <li>
-        <a href="../html/forumMain.html">포럼</a>
+        <a href="../html/forumMain.html" class="nav__clicked">포럼</a>
       </li>
       <li>
         <a href="../html/mypage.html">로그인</a>
@@ -44,7 +44,7 @@
 
   <!--MAIN-->
   <section class="forumQ-wrapper">
-    <form class="createQuestion">
+    <form method="post" enctype="multipart/form-data" class="createQuestion">
       <ul>
         <li>
           <h4>질문 제목</h4>
@@ -66,12 +66,16 @@
           <input class="txtArea" placeholder="태그를 입력하세요"></input>
           <ul id="tag-list"></ul>
         </li>
-        <li class="uploadImg">
+        <li >
           <h4>사진을 첨부하세요</h4>
-          <div class="div__img"></div>
-          <div class="btnUpload-button">
-            <label for="btnUpload">첨부하기</label>
-            <input type="file" id="btnUpload" name="btnUpload" accept="image/*" onchange="loadFile(this)" value="첨부하기"></input>
+          <div class="uploadImg">
+            <div class="fileImg">
+              <p id="fileName"></p>
+            </div>
+            <div class="btnUpload-button">
+              <label for="btnUpload">첨부하기</label>
+              <input type="file" id="btnUpload" name="btnUpload" accept="image/*" onchange="loadFile(this)" value="첨부하기"></input>
+            </div>
           </div>
         </li>
         <li>

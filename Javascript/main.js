@@ -27,3 +27,75 @@ function date2Digits(){
 }
 date2Digits();
 
+
+//CKEditor
+ClassicEditor
+	.create( document.querySelector( '#editor' ), {
+		toolbar: {
+			items: [
+				'heading',
+				'|',
+				'fontFamily',
+				'fontSize',
+				'fontColor',
+				'bold',
+				'underline',
+				'italic',
+        'highlight',
+        'bulletedList',
+				'numberedList',
+				'specialCharacters',
+				'|',
+        'alignment',
+				'indent',
+				'outdent',
+				'|',
+        'link',
+				'imageUpload',
+				'insertTable',
+				'blockQuote',
+        'code',
+        'codeBlock',
+        'mediaEmbed',
+        '|',
+				'undo',
+				'redo'
+			]
+		},
+		language: 'ko',
+		image: {
+			toolbar: [
+				'imageTextAlternative',
+				'imageStyle:inline',
+				'imageStyle:side',
+        'imageStyle:block'
+			]
+		},
+		table: {
+			contentToolbar: [
+				'tableColumn',
+				'tableRow',
+				'mergeTableCells'
+			]
+		},
+		licenseKey: '',
+	} )
+	.then( editor => {
+		window.editor = editor;
+	} )
+	.catch( error => {
+		console.error( 'Oops, something went wrong!' );
+		console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
+		
+		console.error( error );
+	} );
+
+
+
+  //File Upload Button
+  function loadFile(input) {
+      const file = input.files[0];
+  
+      const name = document.getElementById('fileName');
+      name.textContent = file.name;
+  };

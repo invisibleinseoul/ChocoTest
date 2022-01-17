@@ -84,7 +84,7 @@ header .logo{
   margin-left: auto;
   margin-inline-start: 1.5rem;
 }
-.clicked{color: #FA3D4B;}
+.nav__clicked{color: #FA3D4B;}
 .nav__menu li{
   margin-right: 10%;
   min-height: 19px;
@@ -205,23 +205,40 @@ header .logo{
 }
 .createQuestion ul{margin-top: 5px;}
 .createQuestion ul li{margin-bottom: 30px;}
+
 .createQuestion #tag-list{
   display: inline-block;
   margin-inline-start: 1rem;
 }
 .createQuestion .uploadImg{
-  align-items: flex-start;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 327px;
 }
-.createQuestion .div__img{
+.createQuestion .fileImg{
   border: 1px solid black;
   width: 237px;
   height: 46px;
   margin-top: 15px;
   display: flex;
+  margin-right: 20px;
 }
+.createQuestion .btnUpload-button{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  background-color: #CCC;
+  border-radius: 5px;
+  height: 46px;
+  width: 82px;
+  line-height: 46px;
+  color: #FFF;
+}
+#btnUpload{visibility: hidden;}
+
 .createQuestion .txtArea{
   min-width: 327px;
   overflow: hidden;
@@ -260,21 +277,6 @@ header .logo{
   line-height: 28px;
   margin-top: 10px;
 }
-.createQuestion .btnUpload-button{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  cursor: pointer;
-  font-size: 14px;
-  align-items: center;
-  background-color: #CCC;
-  border-radius: 5px;
-  height: 46px;
-  width: 82px;
-  line-height: 46px;
-  color: #FFF;
-}
-#btnUpload{visibility: hidden;}
 .createQuestion .btn--submit{
   background-color: #FA3D4B;
   color: #fff;
@@ -282,7 +284,7 @@ header .logo{
   width: 118px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  display: flex;
 }
 
 /*MY PAGE*/
@@ -466,6 +468,7 @@ table{
   align-items: center;
   display: flex;
   width: 327x;
+  flex-direction: column;
 }
 .forum-wrapper hr{
   height: 1px;
@@ -484,6 +487,7 @@ table{
 }
 .writer p {
   width: 299px;
+  align-content: space-between;
 }
 .btn.btnSelect{
   align-items: center;
@@ -496,10 +500,23 @@ table{
   padding: 0 5.5px;
   position: absolute;
   left: calc(327px - 98px);
+  cursor: pointer;
 }
+/* .btn.btnSelect--non{
+  align-items: center;
+  background-color: #7E7E7E;
+  width: 59px;
+  color: #FFF;
+  display: flex;
+  margin-right: 0;
+  height: 24px;
+  padding: 0 5.5px;
+  position: absolute;
+} */
 .QA__write{
   height: 290px;
-  width: 327px;
+  min-width: 327px;
+  width: 45%;
   border: 1px solid black;
 }
 .QA__write .btn--submit{
