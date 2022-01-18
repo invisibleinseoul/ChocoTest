@@ -12,8 +12,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.ckeditor.com/ckeditor5/31.1.0/classic/ckeditor.js"></script>
     
+    <script defer src="../ckeditor5-31.1.0-qgpnqcvs5tls/build/ckeditor.js"></script>
+
     <link rel="stylesheet" href="../css/main.css">
   
     <title>Choco Forum</title>
@@ -45,7 +46,7 @@
     <section class="forum-wrapper">
       <div class="detail-content">  <!--QUESTION-->
         <div class="forum-content-wrapper">
-          <div class="writer">작성자 <span id="date"></span></div>
+          <div class="writer">작성자 <span id="date"></span></div>  <!--질문 작성한 날짜 데이터 저장해서 불러와야 함(수정 필요)-->
           <h4>질문 제목입니다.</h4>
           <p>맥에서 3.8.7버전 설치하고 터미널에서 확인했는데 버전이 다르게 뜨네요...혹시 재설치 해야하는걸까요?</p>
           <img src="../images/img_preview.png" alt="img_preview">
@@ -58,7 +59,7 @@
       <div class="question__answers"> <!--ANSWERS-->
         <div class="QA-wrapper">
           <div class="writer"><span class="material-icons" id="arrowRight">subdirectory_arrow_right</span>
-            [초코왕] 작성자 <span id="date"></span>
+            [초코왕] 작성자 <span id="date"></span> <!--답변 작성한 날짜 데이터 저장해서 불러와야 함(수정 필요)-->
             <p>
               님, 저 밑에 있는 터미널 다 '쓰레기통 아이콘' 눌러 없애버리시고 다시 초록 버튼 눌러보세요.
             </p>
@@ -66,14 +67,14 @@
         </div>
         <div class="QA-wrapper">
           <div class="writer"><span class="material-icons" id="arrowRight">subdirectory_arrow_right</span>
-            [초코왕] 작성자 <span id="date"></span>
+            [초코왕] 작성자 <span id="date"></span> <!--답변 작성한 날짜 데이터 저장해서 불러와야 함(수정 필요)-->
             <p>
               님, 저 밑에 있는 터미널 다 '쓰레기통 아이콘' 눌러 없애버리시고 다시 초록 버튼 눌러보세요.
             </p>
         </div>
         <div class="QA-wrapper">
           <div class="writer"><span class="material-icons" id="arrowRight">subdirectory_arrow_right</span>
-            [초코왕] 작성자 <span class="date"></span>
+            [초코왕] 작성자 <span class="date"></span>  <!--답변 작성한 날짜 데이터 저장해서 불러와야 함(수정 필요)-->
             <p>
               님, 저 밑에 있는 터미널 다 '쓰레기통 아이콘' 눌러 없애버리시고 다시 초록 버튼 눌러보세요.
             </p>

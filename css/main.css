@@ -414,7 +414,6 @@ table{
 }
 
 /*FORUM DETAIL WRITER*/
-.forum-wrapper{margin-inline-start: 1rem;}
 .forum-wrapper .detail-content{
   width: 327px;
   margin-bottom: 29px; 
@@ -526,11 +525,16 @@ table{
 .QA__write{
   min-height: 290px;
   min-width: 327px;
-  width: 45%;
+  width: 50%;
   position: relative;
+  margin-bottom: 80px;
 }
-#editor{
-  height: 290px;
+.forum-wrapper .QA__writeHr{
+  min-width: 375px;
+  width: 60%;
+}
+.ck-editor__editable{
+  height: 300px;
 }
 /* 답변 작성하기 버튼 */
 .QA__write .btn--submit{
