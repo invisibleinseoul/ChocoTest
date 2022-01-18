@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../css/main.css">
   
     <title>Choco Forum</title>
+    <script defer src="../Javascript/ckeditor.js"></script>
     <script defer src="../Javascript/main.js"></script>
   </head>
   <body>
@@ -63,8 +64,8 @@
               님, 저 밑에 있는 터미널 다 '쓰레기통 아이콘' 눌러 없애버리시고 다시 초록 버튼 눌러보세요.
             </p>
             <img src="../images/img_preview 2.png" alt="image"></img>
-            <div class="btn box btnSelect">
-              <div class="txt">채택하기</div></div>
+            <div class="btn box btnSelected">
+              <div class="txt">채택된 답변</div></div>
           </div>
         </div>
         <div class="QA-wrapper">
@@ -91,7 +92,8 @@
       <hr>
       <!--Write Box-->
       <div class="QA__write">
-        <form id="editor">
+        <form>
+          <div id="editor"></div>
           <input type="submit" value="답변 작성하기" class="btn btn--submit">
         </form>
       </div>

@@ -203,7 +203,7 @@ header .logo{
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.createQuestion ul{margin-top: 5px;}
+.createQueston ul{margin-top: 5px;}
 .createQuestion ul li{margin-bottom: 30px;}
 
 .createQuestion #tag-list{
@@ -415,11 +415,6 @@ table{
 
 /*FORUM DETAIL WRITER*/
 .forum-wrapper{margin-inline-start: 1rem;}
-.forum-wrapper div{
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
 .forum-wrapper .detail-content{
   width: 327px;
   margin-bottom: 29px; 
@@ -467,8 +462,9 @@ table{
 .QA-wrapper{
   align-items: center;
   display: flex;
-  width: 327x;
+  width: 327px;
   flex-direction: column;
+  position: relative;
 }
 .forum-wrapper hr{
   height: 1px;
@@ -485,10 +481,11 @@ table{
   margin-left: auto;
   margin-right: auto;
 }
-.writer p {
-  width: 299px;
-  align-content: space-between;
+.QA-wrapper .writer p,
+.QA-wrapper .writer img{
+  margin-inline-start: 1.8rem;
 }
+/* 채택하기 버튼 */
 .btn.btnSelect{
   align-items: center;
   background-color: #7E7E7E;
@@ -499,8 +496,21 @@ table{
   height: 24px;
   padding: 0 5.5px;
   position: absolute;
-  left: calc(327px - 98px);
+  right: 0;
   cursor: pointer;
+}
+/* 채택된 답변 */
+.btn.btnSelected{
+  align-items: center;
+  background-color: #FA3D4B;
+  width: 70px;
+  color: #FFF;
+  display: flex;
+  margin-right: 0;
+  height: 24px;
+  padding: 0 5.5px;
+  position: absolute;
+  right: 0;
 }
 /* .btn.btnSelect--non{
   align-items: center;
@@ -514,11 +524,15 @@ table{
   position: absolute;
 } */
 .QA__write{
-  height: 290px;
+  min-height: 290px;
   min-width: 327px;
   width: 45%;
-  border: 1px solid black;
+  position: relative;
 }
+#editor{
+  height: 290px;
+}
+/* 답변 작성하기 버튼 */
 .QA__write .btn--submit{
   background-color: #FA3D4B;
   color: #fff;
@@ -527,4 +541,7 @@ table{
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  margin-top: 20px;
+  position: absolute;
+  right: 0;
 }
