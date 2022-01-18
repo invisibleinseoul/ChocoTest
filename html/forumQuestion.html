@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="../css/main.css">
 
   <title>Choco Forum</title>
+
+  <script defer src="../Javascript/tag.js" type="module"></script>
   <script defer src="../Javascript/main.js"></script>
 </head>
 <body>
@@ -63,7 +65,9 @@
         <li>
           <h4>태그</h4>
           <div class="furtherEx">질문에 해당하는 최대 5개의 태그를 추가하세요.</div>
-          <input class="txtArea" placeholder="태그를 입력하세요"></input>
+          <input id="tag" class="txtArea" placeholder="태그를 입력하세요"></input>
+          <input type="button" value="추가" onclick="addTag()">
+          <input type="button" value="삭제" onclick="removeTag()">
           <ul id="tag-list"></ul>
         </li>
         <li >

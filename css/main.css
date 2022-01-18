@@ -511,7 +511,7 @@ table{
   position: absolute;
   right: 0;
 }
-/* .btn.btnSelect--non{
+.btn.btnSelect--non{
   align-items: center;
   background-color: #7E7E7E;
   width: 59px;
@@ -521,7 +521,8 @@ table{
   height: 24px;
   padding: 0 5.5px;
   position: absolute;
-} */
+  right: 0;
+}
 .QA__write{
   min-height: 290px;
   min-width: 327px;

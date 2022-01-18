@@ -101,3 +101,34 @@ ClassicEditor
       const name = document.getElementById('fileName');
       name.textContent = file.name;
   };
+
+
+	//Add/Remove tag button >> Need to edit to operate in diffrent way
+	function addTag() {
+		const addVal = document.getElementById('tag').value;
+
+		const li = document.createElement("li");
+		li.setAttribute('id', addVal);
+
+		const txtNode = document.createTextNode(addVal);
+		li.appendChild(txtNode);
+
+		document.getElementById('tag-list').appendChild(li);
+	}
+
+	function removeTag(){
+		const ul = document.getElementById('tag-list');
+
+		const tags = ul.getElementsByTagName('li');
+
+		if(tags.length > 0){
+			tags[0].remove();
+		}
+	}
+
+	//Prevent Enter Key >> Need to edit to run only on forumQuestion.html
+	document.addEventListener('keydown', function(event){
+		if(event.keyCode === 13){
+			event.preventDefault();
+		};
+	}, true);
