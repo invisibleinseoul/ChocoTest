@@ -246,11 +246,11 @@ header .logo{
   min-height: 46px;
   margin-top: 5px;
 }
-.createQuestion textarea{
+.createQuestion .tagTxtArea{
   min-width: 327px;
   overflow: hidden;
   height: auto;
-  height: 46px;
+  min-height: 46px;
   margin-top: 5px;
 }
 .createQuestion textarea::placeholder{color: #7E7E7E;}

@@ -86,11 +86,11 @@ ClassicEditor
 	.catch( error => {
 		console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
 		console.error( error );
-	} );
+});
 
-	ClassicEditor.replace('editor', {
-		height: 300
-	});
+ClassicEditor.replace('editor', {
+	height: 300
+});
 
 
 
@@ -104,31 +104,73 @@ ClassicEditor
 
 
 	//Add/Remove tag button >> Need to edit to operate in diffrent way
-	function addTag() {
-		const addVal = document.getElementById('tag').value;
+	// function addTag() {
+	// 	const addVal = document.getElementById('tag').value;
 
-		const li = document.createElement("li");
-		li.setAttribute('id', addVal);
+	// 	const li = document.createElement("li");
+	// 	li.setAttribute('id', addVal);
 
-		const txtNode = document.createTextNode(addVal);
-		li.appendChild(txtNode);
+	// 	const txtNode = document.createTextNode(addVal);
+	// 	li.appendChild(txtNode);
 
-		document.getElementById('tag-list').appendChild(li);
+	// 	document.getElementById('tag-list').appendChild(li);
+	// }
+
+	// function removeTag(){
+	// 	const ul = document.getElementById('tag-list');
+
+	// 	const tags = ul.getElementsByTagName('li');
+
+	// 	if(tags.length > 0){
+	// 		tags[0].remove();
+	// 	}
+	// }
+const input = document.querySelector('.tagTxtArea');
+const tagList = document.querySelector('.tag-list');
+
+const onAdd = () => {
+	const text = input.value;
+	if(input.value === ''){
+		input.focus();
+		return;
 	}
 
-	function removeTag(){
-		const ul = document.getElementById('tag-list');
+	const listItem = document.createElement('li');
+	listItem.setAttribute('class', 'listItem');
 
-		const tags = ul.getElementsByTagName('li');
+	const listTxt = document.createElement('span');
+	listTxt.setAttribute('class', 'listTxt');
+	listTxt.innerHTML = text;
 
-		if(tags.length > 0){
-			tags[0].remove();
-		}
+	const listDel = document.createElement('button');
+	listDel.setAttribute('class', 'listDel');
+	listDel.innerHTML = '<i>x</i>';
+	listDel.addEventListener('click', () => {
+		tagList.removeChild(listItem);
+	});
+
+	listItem.appendChild(listTxt);
+	listItem.appendChild(listDel);
+	tagList.appendChild(listItem);
+	input.value = '';
+	input.focus();
+};
+
+input.addEventListener('keydown', (event) => {
+	if(event.keycode === 13) {
+		onAdd();
 	}
+	return;
+});
 
-	//Prevent Enter Key >> Need to edit to run only on forumQuestion.html
-	document.addEventListener('keydown', function(event){
-		if(event.keyCode === 13){
-			event.preventDefault();
-		};
-	}, true);
+
+
+
+
+
+//Prevent Enter Key >> Need to edit to run only on forumQuestion.html
+document.addEventListener('keydown', function(event){
+	if(event.keyCode === 13){
+		event.preventDefault();
+	};
+}, true);

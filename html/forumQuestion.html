@@ -46,7 +46,7 @@
 
   <!--MAIN-->
   <section class="forumQ-wrapper">
-    <form method="post" enctype="multipart/form-data" class="createQuestion">
+    <div class="createQuestion">
       <ul>
         <li>
           <h4>질문 제목</h4>
@@ -65,10 +65,15 @@
         <li>
           <h4>태그</h4>
           <div class="furtherEx">질문에 해당하는 최대 5개의 태그를 추가하세요.</div>
-          <input id="tag" class="txtArea" placeholder="태그를 입력하세요"></input>
-          <input type="button" value="추가" onclick="addTag()">
-          <input type="button" value="삭제" onclick="removeTag()">
-          <ul id="tag-list"></ul>
+          <input type="text" id="tag" class="tagTxtArea" placeholder="태그를 입력하세요"></input>
+          <!-- <input type="button" value="추가" onclick="addTag()">
+          <input type="button" value="삭제" onclick="removeTag()"> -->
+          <ul id="tag-list">
+            <li class="listItem">
+              <span class="listTxt">Hi</span>
+              <button class="listDel">x</button>
+            </li>
+          </ul>
         </li>
         <li >
           <h4>사진을 첨부하세요</h4>
@@ -92,7 +97,7 @@
         </li>
         <input type="submit" value="질문 작성하기" class="btn btn--submit">
       </ul>
-    </form>
+    </div>
   </section>
 
   <!--FOOTER-->
