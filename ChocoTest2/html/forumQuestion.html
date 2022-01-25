@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../css/main.css">
+
+  <title>Choco Forum</title>
+
+  <script defer src="../Javascript/tag.js" type="module"></script>
+  <script defer src="../Javascript/main.js"></script>
+</head>
+<body>
+  <!--HEADER-->
+  <header>
+    <a href="index.html">
+      <div class="header">
+        <img src="../images/logo_choco.png" alt="Choco" class="logo">
+      </div>
+    </a>
+  </header>
+  <section class="nav">
+    <ul class="nav__menu">
+      <li>
+        <a href="../index.html">홈</a></li>
+      <li>
+        <a href="../html/forumMain.html" class="nav__clicked">포럼</a>
+      </li>
+      <li>
+        <a href="../html/mypage.html">로그인</a>
+      </li>
+      <li>
+        <div class="btn_createQ">
+          <a href="../html/forumQuestion.html" class="btn box btn__question">질문 작성하기</a>
+        </div>
+      </li>
+    </ul>
+    <hr>
+  </section>
+
+  <!--MAIN-->
+  <section class="forumQ-wrapper">
+    <div class="createQuestion">
+      <ul>
+        <li>
+          <h4>질문 제목</h4>
+          <div class="furtherEx">문제 상황을 면확하게 적을수록 정확한 답변을 받을 수 있어요.</div>
+          <input class="txtArea" type="text" placeholder="질문 제목을 입력하세요" required></input>
+        </li>
+        <li>
+          <h4>문제 상황과 궁금한 점</h4>
+          <div class="furtherEx">어떤 문제가 발생했는지 구체적으로 알려주세요.</div>
+          <textarea class="ta__situation" placeholder="1. 문제 상황을 요약해주세요 &#10;2. 어떤 것을 시도했는지 알려주세요 &#10;3. 어떤 부분이 궁금한지 알려주세요" required></textarea>
+        </li>
+        <li>
+          <h4>오류 코드</h4>
+          <textarea class="ta__eCode" required></textarea>
+        </li>  
+        <li>
+          <h4>태그</h4>
+          <div class="furtherEx">질문에 해당하는 최대 5개의 태그를 추가하세요.</div>
+          <input type="text" id="tag" class="tagTxtArea" placeholder="태그를 입력하세요"></input>
+          <!-- <input type="button" value="추가" onclick="addTag()">
+          <input type="button" value="삭제" onclick="removeTag()"> -->
+          <ul id="tag-list">
+            <li class="listItem">
+              <span class="listTxt">Hi</span>
+              <button class="listDel">x</button>
+            </li>
+          </ul>
+        </li>
+        <li >
+          <h4>사진을 첨부하세요</h4>
+          <div class="uploadImg">
+            <div class="fileImg">
+              <p id="fileName"></p>
+            </div>
+            <div class="btnUpload-button">
+              <label for="btnUpload">첨부하기</label>
+              <input type="file" id="btnUpload" name="btnUpload" accept="image/*" onchange="loadFile(this)" value="첨부하기"></input>
+            </div>
+          </div>
+        </li>
+        <li>
+          <h4>채택된 답변자에게 초코볼을 전달합니다</h4>
+          <div>
+            <input class="txtArea ta__choco" type="number" step="10" min="0" placeholder="원하는 만큼 초코볼을 입력하세요" required>
+          </div>
+          <div class="btn btn__plus50choco">50 초코볼</div>
+          <div class="btn btn__plus100choco">100 초코볼</div>    
+        </li>
+        <input type="submit" value="질문 작성하기" class="btn btn--submit">
+      </ul>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <footer>
+    <hr>
+    <img src="../images/logo_choco.png" alt="Choco" class="logo">
+    <ul>
+      <li>회사명 : 주식회사 인비저블(Invisible Inc.)</li>
+      <li>대표자 : 이은정, 이민지</li>
+      <li>연락처 : +82-10-2672-2578 | support@choco.dev</li>
+      <li>주소 : 서울특별시 성동구 뚝섬로 13길 38 상상플래닛 (4층, S409, 인비저블)</li>
+      <li>사업자등록번호 : 149-86-02364</li>
+      <li>통신판매업신고번호 : 2021-서울성동-02248</li>
+      <li>호스팅 정보제공자 : Lorem Ipsum</li>
+      <li>
+        <a href="https://m.facebook.com/invisible.global/?ref=py_c" target="_blank">
+          <img src="../images/icn_facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/choco.support/" target="_blank">
+          <img src="../images/icn_instagram.png" alt="Instargram">
+        </a>
+      </li>
+      <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+      <li class="copyright">Copyright 2021. Invisible All rights reserved.</li>
+    </ul>
+  </footer>
+</body>
+</html>

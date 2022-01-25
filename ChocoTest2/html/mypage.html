@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../css/main.css">
+
+  <title>Choco Forum</title>
+  <script defer src="../Javascript/main.js"></script>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <div class="header">
+        <img src="../images/logo_choco.png" alt="Choco" class="logo">
+      </div>
+    </a>
+  </header>
+  <section class="nav">
+    <ul class="nav__menu" id="nav__menu" onclick="changeColor()">
+      <li id="nav__menu__li" onclick="changeColor()">
+        <a href="../index.html">홈</a></li>
+      <li id="nav__menu__li" onclick="changeColor()">
+        <a href="../html/forumMain.html">포럼</a>
+      </li>
+      <li id="nav__menu__li" onclick="changeColor()">
+        <a href="#" class="nav__clicked">마이페이지</a>
+      </li>
+      <li>
+        <div class="btn_createQ">
+          <a href="../html/forumQuestion.html" class="btn box btn__question">질문 작성하기</a>
+        </div>
+      </li>
+    </ul>
+    <hr>
+  </section>
+  <div class="user">
+    <div class="user-wrapper">
+      <div class="user-name">김초코<span>님</span></div>
+      <div class="exchange-comment">1,800초코볼 부터 환급이 가능합니다.</div>
+    </div>
+    <table class="user-grade">
+      <tr>
+        <td><span>나의 등급 </span>초코왕</td>
+        <td><span>나의 초코볼 </span>000개</td>
+      </tr>
+    </table>
+    <div class="btn">
+      <div class="btn btn--exchange">초코볼 환급받기</div>
+    </div>
+  </div>
+  <div class="myQuestion">
+    <div>
+      <div class="content-title">나의 질문</div>
+      <hr>
+      <a href="../html/forumDetailWriter.html">
+        <div class="content-content">
+          <h4>질문 제목입니다.</h4>
+          <p>내용.</p>
+        </div>
+      </a>
+      <div class="content-content">
+        <hr>
+        <h4>질문 제목입니다.</h4>
+        <p>내용</p>
+      </div>
+      <div class="content-content">
+        <hr>
+        <h4>질문 제목입니다.</h4>
+        <p>내용</p>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="myAnswer">
+    <div>
+      <div class="content-title">나의 답변 00개 </div>
+      <hr class="mypage-hr">
+      <a href="../html/forumDetailNonwriter.html">
+        <div class="content-content">
+          <h4>질문 제목입니다.</h4>
+          <p>내용</p>
+        </div>
+      </a>
+      <div class="content-content">
+        <hr>
+        <h4>질문 제목입니다.</h4>
+        <p>내용</p>
+      </div>
+      <div class="content-content">
+        <hr>
+        <h4>질문 제목입니다.</h4>
+        <p>내용</p>
+      </div>
+    </div>
+    <hr>
+  </div>
+ 
+  <div class="buy">
+    <div class="content-title">초코볼 구매하기</div>
+    <table class="price">
+      <tr>
+        <td>120<span>초코볼</span></td>
+        <td>1,900원</td>
+      </tr>
+      <tr>
+        <td>300<span>초코볼</span></td>
+        <td>4,900원</td>
+      </tr>
+      <tr>
+        <td>600<span>초코볼</span></td>
+        <td>9,900원</td>
+      </tr>
+      <tr>
+        <td>900<span>초코볼</span></td>
+        <td>14,900원</td>
+      </tr>
+      <tr>
+        <td>1200<span>초코볼</span></td>
+        <td>19,900원</td>
+      </tr>
+    </table>
+    <div class="btn">
+      <div class="btn btn--purchase">초코볼 구매하기</div>
+    </div>
+  </div>
+
+
+
+
+    <!--FOOTER-->
+    <footer>
+      <hr>
+      <img src="../images/logo_choco.png" alt="Choco" class="logo">
+      <ul>
+        <li>회사명 : 주식회사 인비저블(Invisible Inc.)</li>
+        <li>대표자 : 이은정, 이민지</li>
+        <li>연락처 : +82-10-2672-2578 | support@choco.dev</li>
+        <li>주소 : 서울특별시 성동구 뚝섬로 13길 38 상상플래닛 (4층, S409, 인비저블)</li>
+        <li>사업자등록번호 : 149-86-02364</li>
+        <li>통신판매업신고번호 : 2021-서울성동-02248</li>
+        <li>호스팅 정보제공자 : Lorem Ipsum</li>
+        <li>
+          <a href="https://m.facebook.com/invisible.global/?ref=py_c" target="_blank">
+            <img src="../images/icn_facebook.png" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/choco.support/" target="_blank">
+            <img src="../images/icn_instagram.png" alt="Instargram">
+          </a>
+        </li>
+        <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+        <li class="copyright">Copyright 2021. Invisible All rights reserved.</li>
+      </ul>
+    </footer>
+</body>
+</html>

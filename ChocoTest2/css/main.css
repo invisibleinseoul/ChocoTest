@@ -1,0 +1,99 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+body{
+  color: #000;
+  min-width: 375px;
+  font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+a:hover{color: #FA3D4B;}
+.btn{
+  background-color: #FA3D4B;
+  border-radius: 3px;
+  height: 24px;
+  width: 71px;
+  border-radius: 4px;
+}
+.txt{
+  color: #FFF;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+}
+.box2{
+  color: #FA3D4B;
+  border: 1px solid;
+  border-radius: 10px;
+  display: inline;
+  padding: 5px;
+  font-size: 12px;
+  width: 28px;
+  height: 65px;
+  font-weight: 700;
+}
+.writer #date{
+  font-size: 10px;
+}
+
+/* FOOTER */
+
+
+
+
+/* HEADER */
+.header{
+  height: 76px;
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.header .logo{
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+.nav{
+  width: 375px;
+  position: relative;
+  height: 43px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #7E7E7E;
+}
+.navList{
+  position: absolute;
+  display: flex;
+  font-size: 16px;
+  left: 24px;
+  top: 12px;
+  bottom: 12px;
+}
+.navList li{
+  line-height: 24px;
+  margin-right: 36px;
+}
+.navList li:nth-child(2){
+  width: 28px;
+}
+.navList li:nth-child(3){
+  width: 42px;
+}
+.navList li:last-child{
+  margin-left: calc(375px - 48px - 14px - 28px - 42px - 72px - 71px - 36px);
+}
+
+
+.contents-list-frame{
+  width: 327px;
+  min-height: 500px;
+  max-height: 3000px;
+  border: 1px solid #000;
+  margin-left: auto;
+  margin-right: auto;
+}
